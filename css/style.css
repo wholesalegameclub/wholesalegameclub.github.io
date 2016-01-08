@@ -1,0 +1,327 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*:before, *:after {
+    box-sizing: inherit;
+}
+body ::selection {
+    background-color: #dc0000;
+    color: #ffffff;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: ProximaNova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+header {
+    background-color: #000000;
+    box-shadow: inset 0 20px 20px -20px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+section.page {
+    padding-top: 35px;
+    position: relative;
+    transition: top 0.1s;
+}
+nav a.logo {
+    float: left;
+    margin-right: 3em;
+}
+header nav a.logo {
+    display: block;
+    width: 12.625em;
+    height: 1.5625em;
+    margin-top: 1.6875em;
+    float: left;
+    position: relative;
+}
+
+.site-header a {
+    color: #ffffff;
+    transition: 0.2s color;
+}
+
+header nav ul li a {
+    display: block;
+}
+a {
+    color: #dc0000;
+    text-decoration: none;
+    transition: 0.2s color;
+}
+a {
+    background-color: transparent;
+}
+nav ul {
+    height: 5em;
+    line-height: 5em;
+}
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header nav ul li {
+    text-align: left;
+    float: left;
+    margin-top: 0;
+    display: block;
+    margin-bottom: 2em;
+}
+nav ul.primary-nav {
+    border-top: none;
+    box-shadow: none;
+    float: left;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    background-color: transparent;
+    display: block;
+    text-align: center;
+    margin-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+nav ul.secondary-nav {
+    display: block;
+    float: right;
+    text-align: right;
+}
+section.page {
+    padding-top: 5em;
+}
+section.hero.homepage {
+    padding-top: 12em;
+    height: 30.5625em;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: #242424;
+    background-image: url('../images/warehouse-1.png');
+}
+section.hero .header {
+    width: 50%;
+}
+
+.wrapper {
+    padding-right: 0;
+    padding-left: 0;
+}
+.wrapper {
+    max-width: 77em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+section.hero.homepage h1 {
+    font-family: ProximaNova-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: left;
+    line-height: 1;
+}
+.hero h1 {
+    font-size: 4em;
+    padding: 0;
+    text-align: left;
+    font-size: 2.5em;
+    line-height: 1.6em;
+    color: #ffffff;
+    margin: 0.25em 0 0 0;
+}
+.site-header li a.button {
+    margin: 0;
+    font-size: 0.93em;
+    line-height: 1.6em;
+    position: relative;
+    top: -1px;
+}
+.site-header .primary-nav a.active {
+    color: #dc0000;
+    background-image: linear-gradient(to bottom, rgba(220, 0, 0, 0) 0%, rgba(220, 0, 0, 0) 64%, #dc0000 64%, #dc0000 65%, rgba(220, 0, 0, 0) 65%, rgba(220, 0, 0, 0) 100%);
+}
+.button.inverse, input[type="submit"].inverse, button.inverse {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    transition: 0.2s border;
+}
+.button.ghost, input[type="submit"].ghost, button.ghost {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    box-shadow: none;
+}
+header nav .nav-getstarted a {
+    padding: 9px 38px;
+}
+header .transition {
+    transition: all 0.2s ease-in-out;
+}
+.button, input[type="submit"], button {
+    display: inline-block;
+    background-color: #dc0000;
+    color: #ffffff;
+    font-family: ProximaNova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    padding: 0.75em 1.25em;
+    text-decoration: none;
+    text-align: center;
+    margin: 0.75em 0;
+    border: none;
+    transition: 0.2s ease-out;
+    border-radius: 5px;
+}
+
+.hero p {
+    padding: 0;
+    text-align: left;
+    font-size: 2.25em;
+    line-height: 2.25em;
+    color: #ffffff;
+    margin: 0;
+}
+section.features {
+    overflow: hidden;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+section.hero p {
+    font-family: ProximaNova-SemiBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.image-credit {
+  font-size: 0.5em;
+  float: right;
+  margin-right: 1%;
+  margin-top: -6px;
+}
+.image-credit a {
+  color: black;
+}
+
+section.features.hero .header {
+    width: 100%;
+}
+
+.features h2 {
+    font-size: 4em;
+    margin: .5em 0 1.6em 0;
+    padding: 0;
+    letter-spacing: -2px;
+    color: #898989;
+}
+
+section.features.signup h2 {
+    color: #242424;
+    line-height: 1;
+    text-align: center;
+    margin: 0;
+}
+
+section.features.signup.hero {
+    background-color: #ececec;
+    background-image: none;
+    background-position: inherit;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+section.features.signup .subheading {
+    color: #242424;
+    font-size: 2em;
+    margin: 20px auto;
+    text-align: center;
+}
+section.hero.signup section .content {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 17.05961%;
+}
+
+section.hero.signup section .content .field {
+    margin-bottom: 1em;
+    color: #ffffff;
+    float: left;
+    display: block;
+    margin-right: 3.57866%;
+    width: 100%;
+}
+section.features.signup.hero .content .field {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+}
+
+section.hero.signup section .content input[type=text],
+section.hero.signup section .content input[type=email],
+section.hero.signup section .content input[type=password] {
+    padding: .75em 1em;
+    width: 100%;
+    font-size: 0.9375em;
+    border: none;
+    border-radius: 3px;
+    background-clip: padding-box;
+    transition: background 0.2s, color 0.2s;
+    color: #242424;
+    outline: none;
+}
+
+section.features.signup .form-control {
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+}
+input {
+    line-height: normal;
+}
+section.hero.rules {
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: #242424;
+    background-image: url('../../media/images/dist/about-bg.jpg');
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+.rule {
+  text-transform: uppercase;
+  font-size: smaller;
+  margin-bottom: 0;
+  color: #aaa;
+}
+section.the-rules h3 {
+  margin: 0;
+  color: #f88;
+}
+section.the-rules p {
+  margin-top: 0;
+}
+
+section.the-rules section.feature {
+  margin-bottom: 10px;
+  background-color: #444444;
+  color: white;
+  padding: 10px 10px 1px 17px;
+  }
