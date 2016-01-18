@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wholesale Game Club, LLC</title>
+    <meta name="description" content="A wholesale purchasing club for gamers in Palm Beach County, Florida." property="description"></meta>
+    <meta name="keywords" content="wholesale game club florida" property="keywords"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1" property="viewport"></meta>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(initialize);
+
+      function initialize() {
+      var opts = {sendMethod: 'auto'};
+      // Replace the data source URL on next line with your data source URL.
+      var query = new google.visualization.Query('https://docs.google.com/a/flipstone.com/spreadsheets/d/1RffNiraKStNRs7CZmXZ7UKvnzv2et0aO7sdE0ZyaZZk/gviz/tq?&tq=&gid=1451583712', opts);
+
+      // Optional request to return only column C and the sum of column B, grouped by C members.
+      query.setQuery('select A, B');
+
+      // Send the query with a callback function.
+      query.send(handleQueryResponse);
+      };
+
+      function handleQueryResponse(response) {
+
+        if (response.isError()) {
+          alert('Error in query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+          return;
+        }
+
+        var data = response.getDataTable();
+        window.data = data;
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        var pieOptions =
+        { title: 'Current Batch'
+        , width: 600
+        , height: 600
+        , colors: ['#393', '#ccc']
+        , pieSliceText: 'value'
+        , slices:
+          { 0:
+            { offset: 0.2
+            }
+          }
+        };
+        chart.draw(data, pieOptions);
+      };
+
+    </script>
+  </head>
+
+  <header class="site-header">
+    <!-- <div class="bg transition"></div> -->
+    <section class="wrapper">
+      <nav role="navigation">
+        <a href="/" class="logo">Wholesale Game Club, LLC</a>
+
+        <ul class="primary-nav">
+          <li class="nav-how"><a href="/how.html">how</a></li>
+          <li class="nav-how"><a class="active" href="/status.html">status</a></li>
+        </ul>
+        <ul class="secondary-nav">
+          <li class="nav-getstarted"><a href="#signup" class="transition style-transition--color button ghost inverse">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <body>
+    <section class="page">
+      <div id="chart_div"></div>
+    </section>
+  </body>
+</html>
